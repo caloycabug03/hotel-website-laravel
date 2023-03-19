@@ -225,52 +225,16 @@ text-align:center;
 <div class="red-container">
 
   <div class="top-div">
-    <strong > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, hic.</strong>
+    <strong > Summary of Bookings</strong>
   </div>
 
-  <div class="main-div">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequuntur.</p>
-
-    <div class="room-data">
-    <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="https://via.placeholder.com/150" alt="Sample Picture" style="margin-right: 40px;">
-    <h3><u>Single Room<br> nonsense</u> </h3>
-    
-    
-
-</div>
-
-<div class="room-data">
-    <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="https://via.placeholder.com/150" alt="Sample Picture" style="margin-right: 40px;">
-    <h3><u>Single Room<br> nonsense</u> </h3>
-    
-    
-
-</div>
-<div class="room-data">
-    <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="https://via.placeholder.com/150" alt="Sample Picture" style="margin-right: 40px;">
-    <h3><u>Single Room<br> nonsense</u> </h3>
-    
-    
-
-</div>
-<div class="room-data">
-    <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="https://via.placeholder.com/150" alt="Sample Picture" style="margin-right: 40px;">
-    <h3><u>Single Room<br> nonsense</u> </h3>
-    
-    
-
-</div>
+ 
 </div>
 
   </div>
 </div>
 
 
-<a class="book_btn" href="{{ route('bookingSteps3') }}"> Next </a>
 
 	<!-- rest of the HTML code for the booking process goes here -->
 </body>

@@ -16,4 +16,8 @@ class BookingStepsController extends Controller
     {
         return view ('website.bookingSteps2');
     }
+    public function bookingSteps3 ()
+    {
+        return view ('website.bookingSteps3');
+    }
 }

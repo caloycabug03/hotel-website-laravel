@@ -46,7 +46,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           <a href="{{ route('home') }}"><img src="images/logoHotel.png" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -58,14 +58,14 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item ">
                                  <a class="nav-link" href="{{ route('home') }}">Home</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="{{ route('about') }}">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="{{ route('ourRoom') }}">Our room</a>
+                                 <a class="nav-link" href="{{ route('ourRoom') }}">Facilities</a>
 
                               </li>
                               <li class="nav-item">
@@ -141,7 +141,7 @@
                      <ul  class="link_menu">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="room.html">Our Room</a></li>
+                        <li><a href="room.html">Facilities</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="blog.html">PMS</a></li>

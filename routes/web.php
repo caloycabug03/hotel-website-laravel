@@ -46,6 +46,8 @@ Route::get('/ourRoom' , [HotelWebsiteController::class , 'ourRoom'])->name('ourR
 //bookingStepsController
 Route::get('/bookingSteps' , [BookingStepsController::class , 'bookingSteps'])->name('bookingSteps');
 Route::get('/bookingSteps2' , [BookingStepsController::class , 'bookingSteps2'])->name('bookingSteps2');
+Route::get('/bookingSteps3' , [BookingStepsController::class , 'bookingSteps3'])->name('bookingSteps3');
+
 
 
 

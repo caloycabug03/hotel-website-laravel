@@ -2,169 +2,7 @@
 <html>
 <head>
 	<title>Hotel Booking Process</title>
-<style>
-header {
-  background: rgba(15,21,33,1);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-  border-radius: 10px;
-border: 3px solid red;
-
-}
-
-
-/* check in forms style */
-.form-container {
-     background-color: red;
-     padding: 20px;
-     margin-top:1%;
-    border-radius: 10px;
-border: 3px solid rgba(15,21,33,1) ;
-
-
-     
-   }
-   
-   form {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     height: 30%;
-     
-   }
-   
-   label {
-     color: white;
-     font-weight: bold;
-     margin-bottom: 10px;
-   }
-   
-   input[type="text"],
-   input[type="email"],
-   textarea {
-     margin-bottom: 10px;
-     border: none;
-     border-radius: 4px;
-     box-sizing: border-box;
-   }
-   
-   input[type="submit"] {
-     background-color: white;
-     color: red;
-     padding: 10px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-   }
-   
-   
-
-.logo img {
-  height: 50px;
-  border-radius: 10px;
-
-}
-
-.details h1 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.details p {
-  color: #999;
-  font-size: 14px;
-  margin: 0;
-}
-
-/* Add red accents where needed */
-.logo {
-  border: 2px solid red;
-  padding: 5px;
-  margin-right:10px;
-  border-radius: 10px;
-
-
-}
-
-.details p:first-of-type {
-  color: red;
-}
-
-.bullet{
-      padding-left:30em;
-      list-style-type: square;
-      margin-left: 20px;
-      color:white;
-
-      
-      
-   
-}
-/* main content design */
-.red-container {
-  background: rgba(15,21,33,1);
-
-  margin-top:1%;
-  height:50em  ;
-  width:auto;
-  border-radius:10px;
-
-
-  padding: 20px;
-}
-
-.top-div{
-  background: white;
-border: 3px solid red;
-
-
-margin-top:1%;
-height:auto  ;
-width:auto;
-border-radius:10px;
-
-padding: 20px;
-text-align:center;
-}
-
-.main-div{
-  background: white;
-
-margin-top:1%;
-margin-left:15%;
-margin-right:15%;
-border: 3px solid red;
-
-height:80%  ;
-width:auto;
-border-radius:10px;
-
-padding: 20px;
-text-align:center;
-}
-
-/* room-data images style */
-.room-data {
-  display: flex;
-  flex-direction: column;
-}
-
-.column {
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin: 5px;
-}
-
-
-
-
-
-
-
-</style>
+  <link rel="stylesheet" href="booking.css">
 </head>
 <body>
 <header>
@@ -190,9 +28,11 @@ text-align:center;
   </div>
 </header>
 
+
+
 <!-- check availability forms -->
 <div class="form-container">
-  <form>
+  <!-- <form>
       <label for="date">Check-in Date:</label>
     <input type="date" id="date" name="date">
 
@@ -207,7 +47,34 @@ text-align:center;
     
 
     <input type="submit" value="Check Availability">
-  </form>
+  </form> -->
+<div class="book">
+  <!-- action="{{route('reservations.store')}}" method="POST" -->
+<form class = "book-form" >
+@csrf
+    <div class = "form-item">
+        <label for = "checkin-date">Check In Date: </label>
+        <input type = "date"  name="checkinDate" id = "theDate"   onchange="restrictDate()" >
+    </div>
+    <div class = "form-item">
+        <label for = "checkout-date">Check Out Date: </label>
+        <input type = "date" name="checkoutDate" id = "checkout-date" onchange="restrictDate()">
+    </div>
+    <div class = "form-item">
+        <label for = "adult">Adults: </label>
+        <input type = "number" name="numAdults" min = "1" max = "9" value = "1" id = "adult">
+    </div>
+    <div class = "form-item">
+        <label for = "children">Children: </label>
+        <input type = "number" name="numChildren" min = "0" max = "9" value = "0" id = "children">
+    </div>
+   
+    <div class = "form-item">
+        
+    <button type="submit" class="checkbutton" >CHECK AVAILABILITY</button>
+    </div>
+</form>
+</div>
 
 </div>
 
@@ -222,7 +89,7 @@ text-align:center;
 
     <div class="room-data">
     <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="https://via.placeholder.com/150" alt="Sample Picture" style="margin-right: 40px;">
+  <img src="images/single_booking.png" class="singleBed" alt="Sample Picture" style="margin-right: 40px;">
     <h3><u>Single Room<br> nonsense</u> </h3>
     
     
@@ -258,10 +125,33 @@ text-align:center;
   </div>
 </div>
 
+<div class="post" onclick="openModal()">
+  <h2>Post Title</h2>
+  <p>Post content goes here...</p>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Post Title</h2>
+    <p>Post content goes here...</p>
+    <img src="https://via.placeholder.com/150" alt="">
+    <img src="https://via.placeholder.com/150" alt="">
+    <img src="https://via.placeholder.com/150" alt="">
+  </div>
+</div>
+
+
 <a class="book_btn" href="{{ route('bookingSteps2') }}"> Next </a>
+
 
 
 
 	<!-- rest of the HTML code for the booking process goes here -->
 </body>
+
+
+<script src="booking.js"></script>
+
+
 </html>
