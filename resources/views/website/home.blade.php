@@ -38,6 +38,7 @@
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
       </div>
+        
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -447,8 +448,8 @@
                <div class="col-md-6">
                   <div class="map_main">
                      <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                     </div>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.407237165208!2d123.9580786142725!3d8.161661204217351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255af4c40add5a3%3A0xdeea30d97c53dad6!2sMindanao%20State%20University%20%E2%80%93%20Maigo%20School%20of%20Arts%20and%20Trades!5e0!3m2!1sen!2sph!4v1679275255508!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
                   </div>
                </div>
             </div>
@@ -459,8 +460,8 @@
       <footer>
          <div class="footer">
             <div class="container">
-               <div class="row">
-                  <div class=" col-md-4">
+               <div class="row" id="foot">
+                  <div class=" col-md-5" id="contact">
                      <h3>Contact US</h3>
                      <ul class="conta">
                         <li><i class="fa fa-map-marker" aria-hidden="true"></i>Maigo, Lanao del Norte</li>
@@ -468,25 +469,12 @@
                         <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#">Businesshotel@gmail.com</a></li>
                      </ul>
                   </div>
-                  <div class="col-md-4">
-                     <h3>Menu Link</h3>
-                     <ul class="link_menu">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="room.html">Our Room</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog.html">PMS</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4">
+                 
+                  <div class="col-md-5" >
                      
                      <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100085898087309" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li> <a href="https://twitter.com/Dr_Ringia_Hotel" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
                </div>

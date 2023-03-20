@@ -101,10 +101,9 @@ border: 3px solid rgba(15,21,33,1) ;
       margin-left: 20px;
       color:white;
 
-      
-      
-   
 }
+
+
 /* main content design */
 .red-container {
   background: rgba(15,21,33,1);
@@ -116,11 +115,15 @@ border: 3px solid rgba(15,21,33,1) ;
 
 
   padding: 20px;
+  display: flex;
 }
+
 
 .top-div{
   background: white;
 border: 3px solid red;
+flex-direction: row;
+
 
 
 margin-top:1%;
@@ -130,7 +133,70 @@ border-radius:10px;
 
 padding: 20px;
 text-align:center;
+display: flex;
 }
+
+/* form div and form style */
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.form-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+input[type="radio"], input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+button {
+  display: block;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  form {
+    max-width: 100%;
+  }
+}
+
 
 .main-div{
   background: white;

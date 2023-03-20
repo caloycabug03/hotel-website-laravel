@@ -224,8 +224,39 @@ text-align:center;
 
 <div class="red-container">
 
-  <div class="top-div">
+  <!-- <div class="top-div">
     <strong > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, hic.</strong>
+    <div class="form-div">
+		<form class="form-main">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="bio">Bio:</label>
+			<textarea id="bio" name="bio"></textarea>
+
+			<label for="gender">Gender:</label>
+			<input type="radio" id="male" name="gender" value="male" checked>
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+
+			<label for="hobbies">Hobbies:</label>
+			<input type="checkbox" id="reading" name="hobbies" value="reading">
+			<label for="reading">Reading</label>
+			<input type="checkbox" id="traveling" name="hobbies" value="traveling">
+			<label for="traveling">Traveling</label>
+			<input type="checkbox" id="cooking" name="hobbies" value="cooking">
+
+      <input type="submit" value="Submit">
+
+      </form>
+      </div>
   </div>
 
   <div class="main-div">
@@ -238,7 +269,6 @@ text-align:center;
     
     
 
-</div>
 
 <div class="room-data">
     <div style="display: flex; flex-direction: row; align-items: center;">
@@ -264,6 +294,40 @@ text-align:center;
     
 
 </div>
+</div>
+</div> -->
+
+
+<div class="form">
+<form class="form-main">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="bio">Bio:</label>
+			<textarea id="bio" name="bio"></textarea>
+
+			<label for="gender">Gender:</label>
+			<input type="radio" id="male" name="gender" value="male" checked>
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+
+			<label for="hobbies">Hobbies:</label>
+			<input type="checkbox" id="reading" name="hobbies" value="reading">
+			<label for="reading">Reading</label>
+			<input type="checkbox" id="traveling" name="hobbies" value="traveling">
+			<label for="traveling">Traveling</label>
+			<input type="checkbox" id="cooking" name="hobbies" value="cooking">
+
+      <input type="submit" value="Submit">
+
+      </form>
 </div>
 
   </div>

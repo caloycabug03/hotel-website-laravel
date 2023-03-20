@@ -80,16 +80,14 @@
 
 <div class="red-container">
 
-  <div class="top-div">
-    <strong > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, hic.</strong>
-  </div>
+  
 
   <div class="main-div">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequuntur.</p>
 
     <div class="room-data">
     <div style="display: flex; flex-direction: row; align-items: center;">
-  <img src="images/single_booking.png" class="singleBed" alt="Sample Picture" style="margin-right: 40px;">
+  <img src="images/pixel_single.png" class="singleBed" alt="Sample Picture" >
     <h3><u>Single Room<br> nonsense</u> </h3>
     
     
