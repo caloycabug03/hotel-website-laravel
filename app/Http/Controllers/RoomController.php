@@ -30,6 +30,31 @@ class RoomController extends Controller
         //
     }
 
+    public function available(Request $request)
+{
+    // Get the form data
+    $checkinDate = $request->input('checkinDate');
+    $checkoutDate = $request->input('checkoutDate');
+    $numAdults = $request->input('numAdults');
+    $numChildren = $request->input('numChildren');
+
+    // Perform query to find available rooms based on form data
+    $availableRooms = Room::whereDoesntHave('reservations', function($query) use ($checkinDate, $checkoutDate) {
+        $query->where(function($query) use ($checkinDate, $checkoutDate) {
+            $query->where('checkin_date', '<', $checkoutDate)
+                  ->where('checkout_date', '>', $checkinDate);
+        });
+    })
+    ->where('max_occupancy', '>=', $numAdults + $numChildren)
+    ->get();
+
+    // Return a view with the available rooms
+    return view('rooms.available', [
+        'availableRooms' => $availableRooms,
+    ]);
+}
+
+
     /**
      * Store a newly created resource in storage.
      *

@@ -50,28 +50,23 @@ class ReservationsController extends Controller
      */
     public function store(Request $request)
     {
-       
-
-
-        $reservation = new Reservation;
-        $reservation->checkinDate = $request->input('checkinDate');
-        $reservation->checkoutDate = $request->input('checkoutDate');
-        $reservation->numAdults = $request->input('numAdults');
-        $reservation->numChildren = $request->input('numChildren');
-        // $reservation->name = $request->input('name');
-        // $reservation->email = $request->input('email');
-        // $reservation->address = $request->input('address');
-        // $reservation->dateofbirth = $request->input('dateofbirth');
-        // $reservation->gender = $request->input('gender');
-
-
-       
-        $reservation->save();
-        return redirect()->route('data', $reservation->id);
-
-
-
+        // Validate the form data
+        $validatedData = $request->validate([
+            'checkinDate' => 'required|date',
+            'checkoutDate' => 'required|date|after:checkinDate',
+            'numAdults' => 'required|integer|min:1|max:9',
+            'numChildren' => 'required|integer|min:0|max:9',
+        ]);
+    
+        // Process the form data
+        // ...
+    
+        // Redirect the user to a thank you page
+        return redirect()->route('thankyou');
     }
+    
+
+    
 
    
     public function edit($id)

@@ -60,11 +60,20 @@ Route::get('/bookingSteps3' , [BookingStepsController::class , 'bookingSteps3'])
 
 Route::get('/data',[ReservationsController::class , 'index'])->name('data');
         //modal
-    Route::post('/reservation/store',[ReservationsController::class , 'store'])->name('reservations.store');
-
 
 
 // Route::get('/reserve' , [ReserveController::class , 'index'])->name('booking');
+
+
+// booking steps controller (forms)
+Route::post('/reservations' ,[ReservationsController::class , 'store'])->name('reservations.store');
+
+Route::get('/thankyou', function () {
+    return view('thankyou');
+})->name('thankyou');
+
+//routes for available rooms display
+// Route::post('/rooms/available', [RoomController::class , 'available'])->name('rooms.available');
 
 
 

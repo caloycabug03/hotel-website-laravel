@@ -33,8 +33,12 @@
    <body class="main-layout inner_page">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      <div class="loader">
+  <img src="images/loading.gif" style="height:50px; width:50px" alt="#">
+</div>
+
       </div>
+        
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -71,11 +75,9 @@
                               <li class="nav-item active">
                                  <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="{{ route('blog') }}">Blog</a>
-                              </li>
+                            
                               <li class="nav-item ">
-                                 <a class="nav-link" href="{{ url('login') }}">PMS</a>
+                                 <a class="nav-link" href="#">PMS</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
@@ -108,42 +110,42 @@
             <div class="row">
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery1.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery2.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery3.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery4.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery5.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery6.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery7.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-3 col-sm-6">
                   <div class="gallery_img">
-                     <figure><img src="images/gallery8.jpg" alt="#"/></figure>
+                     <figure><img src="images/pixel_double.png" alt="#"/></figure>
                   </div>
                </div>
             </div>

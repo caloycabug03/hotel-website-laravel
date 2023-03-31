@@ -187,10 +187,10 @@ text-align:center;
 
   </div>
   <div class="details">
-    <h1>Your Company Name</h1>
-    <p>123 Main Street, Anytown USA</p>
-    <p>Phone: 555-123-4567</p>
-    <p>Email: info@yourcompany.com</p>
+  <h1>Dr. Ringia Hotel Website</h1>
+    <p>Maigo, Lanao del Norte</p>
+    <p>Phone Number</p>
+    <p>Email: company@gmail.com</p>
   </div>
 
   <div class="bullet">
