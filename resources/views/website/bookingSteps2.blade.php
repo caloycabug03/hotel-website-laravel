@@ -186,7 +186,7 @@
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (P)</span>
-            <strong>100</strong>
+            <strong>299</strong>
           </li>
         </ul>
 
