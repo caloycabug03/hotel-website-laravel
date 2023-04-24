@@ -5,8 +5,6 @@ header {
   justify-content: flex-start;
   padding: 20px;
   border-radius: 5px;
-border: 3px solid red;
-
 }
 
 .desktop-3-child {
@@ -24,6 +22,10 @@ border: 3px solid red;
   top: 74px;
   left: 348px;
   font-size: var(--font-size-smi);
+}
+.video{
+
+  opacity: ;
 }
 .payment {
   font-weight: 700;
@@ -599,6 +601,7 @@ border: 3px solid red;
 
 .holy-grail__left {
   width: 25%;
+
 }
 
 .holy-grail__middle {
@@ -612,7 +615,7 @@ border: 3px solid red;
 
 /* check in forms style */
 .form-container {
-     background-color: red;
+     background-color: rgb(255, 255, 255);
      padding: 20px;
      margin-top:1%;
     border-radius: 10px;
@@ -638,7 +641,7 @@ border: 3px solid rgba(15,21,33,1) ;
    }
    
    label {
-     color: white;
+     color: #212529;
      font-weight: bold;
      margin-bottom: 10px;
    }
@@ -813,19 +816,17 @@ button:hover {
   text-align: center;
 }
 
-.main-div{
-  background: #ccc;
-  
+.main-div {
+  background: #ffffff;
+  margin: 2%;
 
-margin:2%;
-border: 3px solid red;
-
-height:auto ;
-width:100%;
-border-radius:10px;
-
-text-align:center;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 /* room-data images style */
 .room-data {
@@ -907,19 +908,25 @@ input {
 
 /* check button style */
 .checkbutton {
-  background-color: red; /* Set the background color to red */
-  color: white; /* Set the text color to white */
-  padding: 10px 20px; /* Add some padding to the button */
-  border: 3px solid red ;
-  border-radius: 5px; /* Add some border radius to the button */
-  cursor: pointer; /* Add a pointer cursor when hovering over the button */
-}
+  background-color: rgba(15, 21, 33, 1);
+  border: 2px solid black; /* Add a black border */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+  }
 
 .checkbutton:hover {
-  background-color: rgba(15,21,33,1); /* Set the background color to blue when hovering over the button */
-  border: 3px solid rgba(15,21,33,1) ;
-  border-radius: 5px;
-}
+  background-color: white;
+  color: rgba(15, 21, 33, 1);
+  border-color: rgba(15, 21, 33, 1); /* Change border color on hover */
+  border-radius: 7px;
+  }
+
 
 
 

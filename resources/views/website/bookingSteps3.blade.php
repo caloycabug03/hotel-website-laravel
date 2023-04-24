@@ -190,7 +190,7 @@ text-align:center;
   <h1>Dr. Ringia Hotel Website</h1>
     <p>Maigo, Lanao del Norte</p>
     <p>Phone Number</p>
-    <p>Email: company@gmail.com</p>
+    <p>Email: <i>Dr.magadapaaliringia@gmail.com</i></p>
   </div>
 
   <div class="bullet">

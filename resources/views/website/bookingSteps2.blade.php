@@ -127,15 +127,15 @@
       <img src="images/logoHotel.png" alt="logo">
     </a>
   </div>
-  <div class="text-center">
-  <h1>Dr. Ringia Hotel Website</h1>
-    <p>Maigo, Lanao del Norte</p>
-    <p>Phone Number</p>
-    <p>Email: company@gmail.com</p>
+  <div class="text-start">
+  <h1>Dr. Magadapa Ali Ringia Hotel</h1>
+    <p>MSU-MSAT, Maigo, Lanao del Norte, Philippines, 9206</p>
+    <p>Telephone Number: 227-4208</p>
+    <p>Email: <i>Dr.magadapaaliringia@gmail.com</i></p>
   </div>
   <div class="bullet">
     <ul class="list-unstyled mb-3">
-      <li>Select Date &amp; Room</li>
+    <li><em style="text-shadow: 1px 1px 2px #000000;"> Select Date & Room -<strong><u> Confirmation</u></em></li>
     </ul>
   </div>
 </header>
@@ -186,7 +186,7 @@
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (P)</span>
-            <strong>299</strong>
+            <strong>100</strong>
           </li>
         </ul>
 
